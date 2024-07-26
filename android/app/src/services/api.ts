@@ -14,7 +14,6 @@ export const fetchProducts = async (): Promise<Product[]> => {
         authorId: AUTHOR_ID,
       },
     });
-    console.log(response.data);
     return response.data;
   } catch (error) {
     console.error('Error fetching products:', error);

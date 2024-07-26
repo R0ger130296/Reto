@@ -3,7 +3,6 @@ import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from '../screens/HomeScreen';
 import AddProductScreen from '../screens/AddProductScreen';
 import EditProductScreen from '../screens/EditProductScreen';
-import ProductDetailScreen from '../screens/ProductDetailScreen';
 import {RootStackParamList} from '../types/RootStackParamList';
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -15,11 +14,6 @@ const AppNavigator = () => {
         name="Home"
         component={HomeScreen}
         options={{title: 'Productos'}}
-      />
-      <Stack.Screen
-        name="ProductDetail"
-        component={ProductDetailScreen}
-        options={{title: 'Detalle del Producto'}}
       />
       <Stack.Screen
         name="AddProduct"
